@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+Spartificial Admin Dashboard
+Overview
+The Spartificial Admin Dashboard is a frontend application built for managing and monitoring various aspects of a social media application. It features efficient routing, basic authentication, and a user-friendly interface optimized for desktop devices. This application showcases essential functionalities such as pagination, theme switching, and user management.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+Authentication: Simple login mechanism allows access to the dashboard. Any credentials will lead to the home page of the dashboard.
+Efficient Routing: Utilizes React Router for smooth navigation between pages.
+Pagination: Implemented to manage and display large datasets efficiently on the posts and users pages.
+Theme Switching: Allows the admin to toggle between light and dark themes.
+Logout Functionality: Provides an option to end the admin session.
+Desktop-Only Design: Optimized for desktop devices.
+Sample Data: Uses sample data for demonstration purposes.
+Installation
+To get started with the Spartificial Admin Dashboard, follow these steps:
 
-## Available Scripts
+Clone the Repository
 
-In the project directory, you can run:
+bash
+Copy code
+git clone https://github.com/ChakradharA2003/SpartificialAdminDashboard.git
+Navigate to the Project Directory
 
-### `npm start`
+bash
+Copy code
+cd SpartificialAdminDashboard
+Install Dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy code
+npm install
+Usage
+Start the Development Server
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+npm start
+Open Your Browser
 
-### `npm test`
+Navigate to http://localhost:3000 to view the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Login
 
-### `npm run build`
+Use any credentials to log in and access the dashboard.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Project Structure
+The project structure is organized as follows:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+src/
+components/ - Contains all React components.
+Login/ - Component for the login page.
+Home/ - Component for the home page of the dashboard.
+Users/ - Component for managing users.
+Posts/ - Component for managing posts.
+NotFound/ - Component for handling 404 errors.
+Resources/ - Component for displaying additional resources or information.
+ProtectedRoute/ - Component to handle route protection and authentication.
+NavBar/ - Navigation bar component.
+Header/ - Header component for the dashboard.
+KPIBox/ - Component to display key performance indicators.
+Pagination/ - Component for pagination functionality.
+SampleData/ - Contains sample data used for demonstration purposes.
+context/ - Context providers for state management.
+RouteContext/ - Context for managing route state, data, and theme.
+App.js - Main application component that sets up routing.
+index.js - Entry point for the React application.
+Routing
+The application includes the following routes:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+/login: The login page, accessible without authentication.
+/: The home page of the dashboard, accessible only after login with any credentials.
+/admin/users: The users listing page, accessible only after login with any credentials.
+/admin/posts: The posts listing page, accessible only after login with any credentials.
+/not-found: A 404 error page, accessible without authentication.
+Configuration
+Theme Switching: Admin can toggle between light and dark themes using the provided toggle switch.
+Pagination: Configurable number of posts or users per page.
+Notes
+This application is optimized for desktop devices only.
+Sample data is provided for demonstration and testing purposes. Replace it with real data as necessary for production use.
+Contributing
+Contributions are welcome! Please open an issue or submit a pull request to contribute to this project.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License
+This project is not licensed. You can freely use and modify the code as needed.
